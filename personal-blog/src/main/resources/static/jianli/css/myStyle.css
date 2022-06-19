@@ -1,0 +1,53 @@
+/** 自己定义的css写这里*/
+
+/** 工作经历弹出窗*/
+.myWindow{
+    background-image: url("../img/myWindow/bg.jpg");
+}
+/*内容区*/
+.myWindow .layui-layer-content{
+    /*background: green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /*margin: 10px 0 10px 0;*/
+
+}
+/*上层*/
+.myWindow .layui-layer-content .up-c{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin-top: 25px;
+}
+.myWindow .layui-layer-content .up-c div{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: flex-start;*/
+    /*width: 70%;*/
+    /*height: 100%;*/
+}
+.myWindow .layui-layer-content .up-c div p{
+    font-size: 20px;
+    line-height: 45px;
+}
+
+/*下层*/
+.myWindow .layui-layer-content .down-c{
+    width: 85%;
+    margin-top: 10px;
+
+}
+.myWindow .layui-layer-content .down-c p{
+    text-indent: 36px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.myWindow .layui-layer-content .down-c .skill{
+    /*width: 100%;*/
+    overflow-wrap: break-word;
+}
+

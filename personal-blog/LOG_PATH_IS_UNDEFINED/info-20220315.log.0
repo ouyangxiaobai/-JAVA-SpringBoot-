@@ -1,0 +1,519 @@
+2022-03-15 21:07:02 [main] INFO  com.hongshen.boke.BokeApplication -Starting BokeApplication on DESKTOP-GQBECKU with PID 6416 (started by Zz in D:\共享文件\code space\基于JAVA的综合博客系统的设计与实现（微信：-DRRRRR\基于JAVA的综合博客系统的设计与实现\personal-blog) 
+2022-03-15 21:07:02 [main] DEBUG com.hongshen.boke.BokeApplication -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE 
+2022-03-15 21:07:02 [main] INFO  com.hongshen.boke.BokeApplication -The following profiles are active: my 
+2022-03-15 21:07:02 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e15b7e8: startup date [Tue Mar 15 21:07:02 CST 2022]; root of context hierarchy 
+2022-03-15 21:07:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-03-15 21:07:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$f40a3852] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2022-03-15 21:07:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$205826cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2022-03-15 21:07:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8050 (http) 
+2022-03-15 21:07:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8050"] 
+2022-03-15 21:07:03 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat] 
+2022-03-15 21:07:03 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.34 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\jdk8\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\software\python2\;D:\software\python2\Scripts;D:\software\python2\Scripts\;D:\software\python2\;D:\software\python3\Scripts\;D:\software\python3\;C:\ProgramData\Oracle\Java\javapath;D:\software\securityCrt\;C:\Windows\System32;D:\software\jdk7\jdk\bin;D:\software\jdk7\jdk\jre\bin;D:\software\xuniji\anzhuang\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;D:\software\nodejs\node_global;C:\Program Files (x86)\PuTTY\;D:\software\TortoiseSVN\bin;D:\software\redis4.0\;D:\software\git\cmd;D:\software\nodejs;D:\software\maven\apache-maven-3.5.3\apache-maven-3.5.3\bin;"%SystemRoot\system32;C:\Windows;";C:\Program Files\Mullvad VPN\resources;D:\software\微信开发者工具\微信web开发者工具\dll;D:\software\nodejs;.] 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1295 ms 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/] 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Servlet statViewServlet mapped to [/druid/*] 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*] 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*] 
+2022-03-15 21:07:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*] 
+2022-03-15 21:07:03 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -Init DruidDataSource 
+2022-03-15 21:07:03 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e15b7e8: startup date [Tue Mar 15 21:07:02 CST 2022]; root of context hierarchy 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/delete.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.ArticleController.delete(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/queryList.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.response.article.ArticleListResponse>> com.hongshen.boke.controller.ArticleController.list(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/query.html]}" onto public java.lang.String com.hongshen.boke.controller.ArticleController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/list.html]}" onto public java.lang.String com.hongshen.boke.controller.ArticleController.article() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.ArticleController.edit(com.hongshen.boke.dao.object.ArticleDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/article-edit.html]}" onto public java.lang.String com.hongshen.boke.controller.ArticleController.articleEdit() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/activemq/send]}" onto public java.lang.String com.hongshen.boke.controller.avtivemq.ProviderController.send() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/boke.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.index(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.response.article.ArticleListResponse>> com.hongshen.boke.controller.before.MyBokeController.list(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/search.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.search(org.springframework.ui.Model,java.lang.String) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/tourist/registered.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.registered() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/parentColumn.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.queryArticleForParentColumn(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/column.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.queryArticleForChildColumn(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/detail.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.queryArticle(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/toutist/login.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.login() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/tourist/add.html]}" onto public com.hongshen.boke.response.ResultResponse com.hongshen.boke.controller.before.MyBokeController.addTourist(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/bombing/index]}" onto public void com.hongshen.boke.controller.bombing.BombingController.index() throws java.awt.AWTException 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/delete.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.ColumnController.delete(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/queryList.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.ColumnDO>> com.hongshen.boke.controller.ColumnController.list(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/query.html]}" onto public java.lang.String com.hongshen.boke.controller.ColumnController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/list.html]}" onto public java.lang.String com.hongshen.boke.controller.ColumnController.column() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.ColumnController.edit(com.hongshen.boke.dao.object.ColumnDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/queryParentColumn.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.ColumnDO>> com.hongshen.boke.controller.ColumnController.queryParentColumn(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/column-edit.html]}" onto public java.lang.String com.hongshen.boke.controller.ColumnController.columnEdit() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/queryChildColumn.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.ColumnDO>> com.hongshen.boke.controller.ColumnController.queryChildColumn(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/index.html]}" onto public java.lang.String com.hongshen.boke.controller.IndexController.main(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/welcome.html]}" onto public java.lang.String com.hongshen.boke.controller.IndexController.welcome() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/login.html]}" onto public java.lang.String com.hongshen.boke.controller.IndexController.managerIndex() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/out.html]}" onto public java.lang.String com.hongshen.boke.controller.LoginController.out(javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/logins.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.LoginController.logins(com.hongshen.boke.dao.object.UserDO,javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/userDetails.html]}" onto public java.lang.String com.hongshen.boke.controller.LoginController.userDetails(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/shiro/login]}" onto public java.lang.String com.hongshen.boke.controller.shiro.ShiroController.login(java.lang.String,java.lang.String) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/shiro/a]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.response.article.ArticleListResponse>> com.hongshen.boke.controller.shiro.ShiroController.logins() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/delete.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.TouristController.delete(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/queryList.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.TouristDO>> com.hongshen.boke.controller.TouristController.list(java.lang.Integer,java.lang.Integer,java.lang.String) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/query.html]}" onto public java.lang.String com.hongshen.boke.controller.TouristController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.TouristController.edit(com.hongshen.boke.dao.object.TouristDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/login.html]}" onto public com.hongshen.boke.response.ResultResponse<com.hongshen.boke.dao.object.TouristDO> com.hongshen.boke.controller.TouristController.login(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/tourist/list.html]}" onto public java.lang.String com.hongshen.boke.controller.TouristController.tourist() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/tourist-edit.html]}" onto public java.lang.String com.hongshen.boke.controller.TouristController.touristEdit() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/delete.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.UserController.delete(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/queryList.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.UserDO>> com.hongshen.boke.controller.UserController.list(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/query.html]}" onto public java.lang.String com.hongshen.boke.controller.UserController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/list.html]}" onto public java.lang.String com.hongshen.boke.controller.UserController.user() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.UserController.edit(com.hongshen.boke.dao.object.UserDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/user-edit.html]}" onto public java.lang.String com.hongshen.boke.controller.UserController.userEdit() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/headImgUpload.html]}" onto public com.hongshen.boke.response.ResultResponse com.hongshen.boke.controller.UserController.headImgUpload(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.AppraisalController.index() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.AppraisalController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/appraisal-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.AppraisalController.info() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.AppraisalController.edit(com.hongshen.boke.dao.jianli.object.AppraisalDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.AppraisalController.del(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.AppraisalDO>> com.hongshen.boke.jianli.controller.AppraisalController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/sendEmail]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.before.JianliIndexController.index(com.hongshen.boke.request.email.EmailRequest) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/]}" onto public java.lang.String com.hongshen.boke.jianli.controller.before.JianliIndexController.index(org.springframework.ui.Model) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/download]}" onto public void com.hongshen.boke.jianli.controller.before.JianliIndexController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.ProjectController.index() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.ProjectController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/project-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.ProjectController.info() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.ProjectController.edit(com.hongshen.boke.dao.jianli.object.ProjectDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.ProjectController.del(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.ProjectDO>> com.hongshen.boke.jianli.controller.ProjectController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.SkillController.index() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.SkillController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/skill-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.SkillController.info() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.SkillController.edit(com.hongshen.boke.dao.jianli.object.SkillDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.SkillController.del(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.SkillDO>> com.hongshen.boke.jianli.controller.SkillController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.UserInfoController.index() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.UserInfoController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/userinfo-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.UserInfoController.info() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.UserInfoController.edit(com.hongshen.boke.dao.jianli.object.UserinfoDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.UserInfoController.del(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.UserinfoDO>> com.hongshen.boke.jianli.controller.UserInfoController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/jianli-upload.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.UserInfoController.upload() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/upload.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.UserInfoController.uploadFile(org.springframework.web.multipart.MultipartFile) throws java.io.IOException 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.WorkController.index() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.WorkController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/work-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.WorkController.info() 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.WorkController.edit(com.hongshen.boke.dao.jianli.object.WorkDO) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.WorkController.del(java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.WorkDO>> com.hongshen.boke.jianli.controller.WorkController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-03-15 21:07:04 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-03-15 21:07:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup 
+2022-03-15 21:07:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure 
+2022-03-15 21:07:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure 
+2022-03-15 21:07:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+2022-03-15 21:07:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+2022-03-15 21:07:05 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -Starting beans in phase 2147483547 
+2022-03-15 21:07:05 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -Starting beans in phase 2147483647 
+2022-03-15 21:07:05 [main] INFO  o.a.activemq.broker.BrokerService -Using Persistence Adapter: MemoryPersistenceAdapter 
+2022-03-15 21:07:05 [JMX connector] INFO  o.a.a.broker.jmx.ManagementContext -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi 
+2022-03-15 21:07:05 [main] INFO  o.a.activemq.broker.BrokerService -Apache ActiveMQ 5.15.6 (localhost, ID:DESKTOP-GQBECKU-58601-1647349625187-0:1) is starting 
+2022-03-15 21:07:05 [main] INFO  o.a.activemq.broker.BrokerService -Apache ActiveMQ 5.15.6 (localhost, ID:DESKTOP-GQBECKU-58601-1647349625187-0:1) started 
+2022-03-15 21:07:05 [main] INFO  o.a.activemq.broker.BrokerService -For help or more information please see: http://activemq.apache.org 
+2022-03-15 21:07:05 [main] INFO  o.a.a.broker.TransportConnector -Connector vm://localhost started 
+2022-03-15 21:07:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8050"] 
+2022-03-15 21:07:05 [main] INFO  o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read 
+2022-03-15 21:07:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8050 (http) with context path '' 
+2022-03-15 21:07:05 [main] INFO  com.hongshen.boke.BokeApplication -Started BokeApplication in 3.636 seconds (JVM running for 4.482) 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] INFO  c.h.b.c.before.MyBokeController -域名路径为=======127.0.0.1================================ 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -==>  Preparing: select id, username, password, name, head_portrait, wechat, qq_number, weibo, signature from boke_user  
+2022-03-15 21:07:12 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, ip, interface_name, count, update_time from jianli_statistics WHERE ( ip = ? and interface_name = ? )  
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -==> Parameters:  
+2022-03-15 21:07:12 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 127.0.0.1(String), /boke.html(String) 
+2022-03-15 21:07:12 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 1 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -<==      Total: 1 
+2022-03-15 21:07:12 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==>  Preparing: update jianli_statistics SET ip = ?, interface_name = ?, count = ?, update_time = ? where id = ?  
+2022-03-15 21:07:12 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==> Parameters: 127.0.0.1(String), /boke.html(String), 12(Integer), 2022-03-15 21:07:12.242(Timestamp), 286(Integer) 
+2022-03-15 21:07:12 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -<==    Updates: 1 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -==>  Preparing: SELECT count(0) FROM boke_article ba LEFT JOIN boke_user bu ON ba.user_id = bu.id LEFT JOIN boke_column bc ON ba.column_id = bc.id WHERE 1 = 1  
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -==> Parameters:  
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -<==      Total: 1 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==>  Preparing: select ba.id, ba.title,ba.creat_time as creatTime,bc.name as columnName ,bu.name as uName,ba.description as description,bc.parent_name as parentName from boke_article ba left join boke_user bu on ba.user_id=bu.id left join boke_column bc on ba.column_id=bc.id where 1=1 order by ba.creat_time LIMIT ?  
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==> Parameters: 10(Integer) 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -<==      Total: 10 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is null )  
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 1 
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is not null )  
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 21:07:12 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 3 
+2022-03-15 21:07:15 [http-nio-8050-exec-1] INFO  c.h.b.c.before.MyBokeController -域名路径为=======127.0.0.1================================ 
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -==>  Preparing: select id, username, password, name, head_portrait, wechat, qq_number, weibo, signature from boke_user  
+2022-03-15 21:07:15 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, ip, interface_name, count, update_time from jianli_statistics WHERE ( ip = ? and interface_name = ? )  
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -==> Parameters:  
+2022-03-15 21:07:15 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 127.0.0.1(String), /boke.html(String) 
+2022-03-15 21:07:15 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 1 
+2022-03-15 21:07:15 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==>  Preparing: update jianli_statistics SET ip = ?, interface_name = ?, count = ?, update_time = ? where id = ?  
+2022-03-15 21:07:15 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==> Parameters: 127.0.0.1(String), /boke.html(String), 13(Integer), 2022-03-15 21:07:15.959(Timestamp), 286(Integer) 
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -<==      Total: 1 
+2022-03-15 21:07:15 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -<==    Updates: 1 
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -==>  Preparing: SELECT count(0) FROM boke_article ba LEFT JOIN boke_user bu ON ba.user_id = bu.id LEFT JOIN boke_column bc ON ba.column_id = bc.id WHERE 1 = 1  
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -==> Parameters:  
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -<==      Total: 1 
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==>  Preparing: select ba.id, ba.title,ba.creat_time as creatTime,bc.name as columnName ,bu.name as uName,ba.description as description,bc.parent_name as parentName from boke_article ba left join boke_user bu on ba.user_id=bu.id left join boke_column bc on ba.column_id=bc.id where 1=1 order by ba.creat_time LIMIT ?  
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==> Parameters: 10(Integer) 
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -<==      Total: 10 
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is null )  
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 1 
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is not null )  
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 21:07:15 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 3 
+2022-03-15 21:08:19 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, ip, interface_name, count, update_time from jianli_statistics WHERE ( ip = ? and interface_name = ? )  
+2022-03-15 21:08:19 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 127.0.0.1(String), /article/list.html(String) 
+2022-03-15 21:08:19 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 1 
+2022-03-15 21:08:19 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==>  Preparing: update jianli_statistics SET ip = ?, interface_name = ?, count = ?, update_time = ? where id = ?  
+2022-03-15 21:08:19 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==> Parameters: 127.0.0.1(String), /article/list.html(String), 3(Integer), 2022-03-15 21:08:19.174(Timestamp), 340(Integer) 
+2022-03-15 21:08:19 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -<==    Updates: 1 
+2022-03-15 21:08:19 [http-nio-8050-exec-6] DEBUG c.h.b.d.m.m.M.list_COUNT -==>  Preparing: SELECT count(0) FROM boke_article ba LEFT JOIN boke_user bu ON ba.user_id = bu.id LEFT JOIN boke_column bc ON ba.column_id = bc.id WHERE 1 = 1  
+2022-03-15 21:08:19 [http-nio-8050-exec-6] DEBUG c.h.b.d.m.m.M.list_COUNT -==> Parameters:  
+2022-03-15 21:08:19 [http-nio-8050-exec-6] DEBUG c.h.b.d.m.m.M.list_COUNT -<==      Total: 1 
+2022-03-15 21:08:19 [http-nio-8050-exec-6] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==>  Preparing: select ba.id, ba.title,ba.creat_time as creatTime,bc.name as columnName ,bu.name as uName,ba.description as description,bc.parent_name as parentName from boke_article ba left join boke_user bu on ba.user_id=bu.id left join boke_column bc on ba.column_id=bc.id where 1=1 order by ba.creat_time LIMIT ?, ?  
+2022-03-15 21:08:19 [http-nio-8050-exec-6] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==> Parameters: 10(Integer), 10(Integer) 
+2022-03-15 21:08:19 [http-nio-8050-exec-6] DEBUG c.h.b.d.m.m.MyArticleMapper.list -<==      Total: 3 
+2022-03-15 21:08:23 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, ip, interface_name, count, update_time from jianli_statistics WHERE ( ip = ? and interface_name = ? )  
+2022-03-15 21:08:23 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 127.0.0.1(String), /(String) 
+2022-03-15 21:08:23 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 1 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_user_info  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:08:23 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==>  Preparing: update jianli_statistics SET ip = ?, interface_name = ?, count = ?, update_time = ? where id = ?  
+2022-03-15 21:08:23 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==> Parameters: 127.0.0.1(String), /(String), 21(Integer), 2022-03-15 21:08:23.257(Timestamp), 321(Integer) 
+2022-03-15 21:08:23 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -<==    Updates: 1 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.U.selectByExample -==>  Preparing: select id, name, sex, age, address, link_address, specialty, education, school, link_qq, link_wechat, link_phone, link_email, job from jianli_user_info LIMIT ?  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.U.selectByExample -==> Parameters: 1(Integer) 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.U.selectByExample -<==      Total: 1 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -==>  Preparing: SELECT count(0) FROM jianli_project  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -==> Parameters:  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -<==      Total: 1 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -==>  Preparing: select id, project_name, project_skill, project_time, project_class, project_img , project_details from jianli_project LIMIT ?  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -==> Parameters: 10(Integer) 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -<==      Total: 2 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_skill  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, skill_details from jianli_skill LIMIT ?  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 8 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_work  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.W.selectByExample -==>  Preparing: select id, company_name, job, work_content, start_time, end_time, company_img from jianli_work LIMIT ?  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.W.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.W.selectByExample -<==      Total: 2 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_appraisal  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.A.selectByExample -==>  Preparing: select id, content from jianli_appraisal LIMIT ?  
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.A.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:08:23 [http-nio-8050-exec-3] DEBUG c.h.b.d.j.m.A.selectByExample -<==      Total: 3 
+2022-03-15 21:09:51 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, ip, interface_name, count, update_time from jianli_statistics WHERE ( ip = ? and interface_name = ? )  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_user_info  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:09:51 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 127.0.0.1(String), /(String) 
+2022-03-15 21:09:51 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 1 
+2022-03-15 21:09:51 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==>  Preparing: update jianli_statistics SET ip = ?, interface_name = ?, count = ?, update_time = ? where id = ?  
+2022-03-15 21:09:51 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==> Parameters: 127.0.0.1(String), /(String), 22(Integer), 2022-03-15 21:09:51.976(Timestamp), 321(Integer) 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:09:51 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -<==    Updates: 1 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.U.selectByExample -==>  Preparing: select id, name, sex, age, address, link_address, specialty, education, school, link_qq, link_wechat, link_phone, link_email, job from jianli_user_info LIMIT ?  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.U.selectByExample -==> Parameters: 1(Integer) 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.U.selectByExample -<==      Total: 1 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -==>  Preparing: SELECT count(0) FROM jianli_project  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -==> Parameters:  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -<==      Total: 1 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -==>  Preparing: select id, project_name, project_skill, project_time, project_class, project_img , project_details from jianli_project LIMIT ?  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -==> Parameters: 10(Integer) 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -<==      Total: 2 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_skill  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, skill_details from jianli_skill LIMIT ?  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 8 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_work  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.W.selectByExample -==>  Preparing: select id, company_name, job, work_content, start_time, end_time, company_img from jianli_work LIMIT ?  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.W.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.W.selectByExample -<==      Total: 2 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_appraisal  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.A.selectByExample -==>  Preparing: select id, content from jianli_appraisal LIMIT ?  
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.A.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:09:51 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.A.selectByExample -<==      Total: 3 
+2022-03-15 21:09:57 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, ip, interface_name, count, update_time from jianli_statistics WHERE ( ip = ? and interface_name = ? )  
+2022-03-15 21:09:57 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 127.0.0.1(String), /boke.html(String) 
+2022-03-15 21:09:57 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 1 
+2022-03-15 21:09:57 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==>  Preparing: update jianli_statistics SET ip = ?, interface_name = ?, count = ?, update_time = ? where id = ?  
+2022-03-15 21:09:57 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==> Parameters: 127.0.0.1(String), /boke.html(String), 14(Integer), 2022-03-15 21:09:57.804(Timestamp), 286(Integer) 
+2022-03-15 21:09:57 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -<==    Updates: 1 
+2022-03-15 21:09:57 [http-nio-8050-exec-10] INFO  c.h.b.c.before.MyBokeController -域名路径为=======127.0.0.1================================ 
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.UserMapper.selectByExample -==>  Preparing: select id, username, password, name, head_portrait, wechat, qq_number, weibo, signature from boke_user  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.UserMapper.selectByExample -==> Parameters:  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.UserMapper.selectByExample -<==      Total: 1 
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.M.list_COUNT -==>  Preparing: SELECT count(0) FROM boke_article ba LEFT JOIN boke_user bu ON ba.user_id = bu.id LEFT JOIN boke_column bc ON ba.column_id = bc.id WHERE 1 = 1  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.M.list_COUNT -==> Parameters:  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.M.list_COUNT -<==      Total: 1 
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==>  Preparing: select ba.id, ba.title,ba.creat_time as creatTime,bc.name as columnName ,bu.name as uName,ba.description as description,bc.parent_name as parentName from boke_article ba left join boke_user bu on ba.user_id=bu.id left join boke_column bc on ba.column_id=bc.id where 1=1 order by ba.creat_time LIMIT ?  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==> Parameters: 10(Integer) 
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.MyArticleMapper.list -<==      Total: 10 
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is null )  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 1 
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is not null )  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 21:09:57 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 3 
+2022-03-15 21:10:14 [http-nio-8050-exec-8] INFO  c.h.b.c.before.MyBokeController -域名路径为=======127.0.0.1================================ 
+2022-03-15 21:10:14 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, ip, interface_name, count, update_time from jianli_statistics WHERE ( ip = ? and interface_name = ? )  
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.UserMapper.selectByExample -==>  Preparing: select id, username, password, name, head_portrait, wechat, qq_number, weibo, signature from boke_user  
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.UserMapper.selectByExample -==> Parameters:  
+2022-03-15 21:10:14 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 127.0.0.1(String), /boke.html(String) 
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.UserMapper.selectByExample -<==      Total: 1 
+2022-03-15 21:10:14 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 1 
+2022-03-15 21:10:14 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==>  Preparing: update jianli_statistics SET ip = ?, interface_name = ?, count = ?, update_time = ? where id = ?  
+2022-03-15 21:10:14 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==> Parameters: 127.0.0.1(String), /boke.html(String), 15(Integer), 2022-03-15 21:10:14.124(Timestamp), 286(Integer) 
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.M.list_COUNT -==>  Preparing: SELECT count(0) FROM boke_article ba LEFT JOIN boke_user bu ON ba.user_id = bu.id LEFT JOIN boke_column bc ON ba.column_id = bc.id WHERE 1 = 1  
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.M.list_COUNT -==> Parameters:  
+2022-03-15 21:10:14 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -<==    Updates: 1 
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.M.list_COUNT -<==      Total: 1 
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==>  Preparing: select ba.id, ba.title,ba.creat_time as creatTime,bc.name as columnName ,bu.name as uName,ba.description as description,bc.parent_name as parentName from boke_article ba left join boke_user bu on ba.user_id=bu.id left join boke_column bc on ba.column_id=bc.id where 1=1 order by ba.creat_time LIMIT ?  
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==> Parameters: 10(Integer) 
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.MyArticleMapper.list -<==      Total: 10 
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is null )  
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 1 
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is not null )  
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 21:10:14 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 3 
+2022-03-15 21:10:27 [http-nio-8050-exec-3] DEBUG c.h.b.d.m.UserMapper.selectByExample -==>  Preparing: select id, username, password, name, head_portrait, wechat, qq_number, weibo, signature from boke_user WHERE ( username = ? and password = ? )  
+2022-03-15 21:10:27 [http-nio-8050-exec-3] DEBUG c.h.b.d.m.UserMapper.selectByExample -==> Parameters: admin(String), 123456(String) 
+2022-03-15 21:10:27 [http-nio-8050-exec-3] DEBUG c.h.b.d.m.UserMapper.selectByExample -<==      Total: 1 
+2022-03-15 21:11:01 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.M.list_COUNT -==>  Preparing: SELECT count(0) FROM boke_article ba LEFT JOIN boke_user bu ON ba.user_id = bu.id LEFT JOIN boke_column bc ON ba.column_id = bc.id WHERE 1 = 1  
+2022-03-15 21:11:01 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.M.list_COUNT -==> Parameters:  
+2022-03-15 21:11:01 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.M.list_COUNT -<==      Total: 1 
+2022-03-15 21:11:01 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==>  Preparing: select ba.id, ba.title,ba.creat_time as creatTime,bc.name as columnName ,bu.name as uName,ba.description as description,bc.parent_name as parentName from boke_article ba left join boke_user bu on ba.user_id=bu.id left join boke_column bc on ba.column_id=bc.id where 1=1 order by ba.creat_time LIMIT ?  
+2022-03-15 21:11:01 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==> Parameters: 10(Integer) 
+2022-03-15 21:11:01 [http-nio-8050-exec-10] DEBUG c.h.b.d.m.m.MyArticleMapper.list -<==      Total: 10 
+2022-03-15 21:11:03 [http-nio-8050-exec-5] DEBUG c.h.b.d.m.C.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM boke_column  
+2022-03-15 21:11:03 [http-nio-8050-exec-5] DEBUG c.h.b.d.m.C.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:11:03 [http-nio-8050-exec-5] DEBUG c.h.b.d.m.C.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:11:03 [http-nio-8050-exec-5] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column LIMIT ?  
+2022-03-15 21:11:03 [http-nio-8050-exec-5] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:11:03 [http-nio-8050-exec-5] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 4 
+2022-03-15 21:11:04 [http-nio-8050-exec-7] DEBUG c.h.b.d.m.U.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM boke_user  
+2022-03-15 21:11:04 [http-nio-8050-exec-7] DEBUG c.h.b.d.m.U.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:11:04 [http-nio-8050-exec-7] DEBUG c.h.b.d.m.U.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:11:04 [http-nio-8050-exec-7] DEBUG c.h.b.d.m.UserMapper.selectByExample -==>  Preparing: select id, username, password, name, head_portrait, wechat, qq_number, weibo, signature from boke_user LIMIT ?  
+2022-03-15 21:11:04 [http-nio-8050-exec-7] DEBUG c.h.b.d.m.UserMapper.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:11:04 [http-nio-8050-exec-7] DEBUG c.h.b.d.m.UserMapper.selectByExample -<==      Total: 1 
+2022-03-15 21:11:05 [http-nio-8050-exec-4] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_user_info  
+2022-03-15 21:11:05 [http-nio-8050-exec-4] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:11:05 [http-nio-8050-exec-4] DEBUG c.h.b.d.j.m.U.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:11:05 [http-nio-8050-exec-4] DEBUG c.h.b.d.j.m.U.selectByExample -==>  Preparing: select id, name, sex, age, address, link_address, specialty, education, school, link_qq, link_wechat, link_phone, link_email, job from jianli_user_info LIMIT ?  
+2022-03-15 21:11:05 [http-nio-8050-exec-4] DEBUG c.h.b.d.j.m.U.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:11:05 [http-nio-8050-exec-4] DEBUG c.h.b.d.j.m.U.selectByExample -<==      Total: 1 
+2022-03-15 21:11:06 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -==>  Preparing: SELECT count(0) FROM jianli_project  
+2022-03-15 21:11:06 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -==> Parameters:  
+2022-03-15 21:11:06 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs_COUNT -<==      Total: 1 
+2022-03-15 21:11:06 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -==>  Preparing: select id, project_name, project_skill, project_time, project_class, project_img , project_details from jianli_project LIMIT ?  
+2022-03-15 21:11:06 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -==> Parameters: 10(Integer) 
+2022-03-15 21:11:06 [http-nio-8050-exec-2] DEBUG c.h.b.d.j.m.P.selectByExampleWithBLOBs -<==      Total: 2 
+2022-03-15 21:11:06 [http-nio-8050-exec-8] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_skill  
+2022-03-15 21:11:06 [http-nio-8050-exec-8] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:11:06 [http-nio-8050-exec-8] DEBUG c.h.b.d.j.m.S.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:11:06 [http-nio-8050-exec-8] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, skill_details from jianli_skill LIMIT ?  
+2022-03-15 21:11:06 [http-nio-8050-exec-8] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:11:06 [http-nio-8050-exec-8] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 8 
+2022-03-15 21:11:06 [http-nio-8050-exec-6] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_work  
+2022-03-15 21:11:06 [http-nio-8050-exec-6] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:11:06 [http-nio-8050-exec-6] DEBUG c.h.b.d.j.m.W.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:11:06 [http-nio-8050-exec-6] DEBUG c.h.b.d.j.m.W.selectByExample -==>  Preparing: select id, company_name, job, work_content, start_time, end_time, company_img from jianli_work LIMIT ?  
+2022-03-15 21:11:06 [http-nio-8050-exec-6] DEBUG c.h.b.d.j.m.W.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:11:06 [http-nio-8050-exec-6] DEBUG c.h.b.d.j.m.W.selectByExample -<==      Total: 2 
+2022-03-15 21:11:07 [http-nio-8050-exec-1] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -==>  Preparing: SELECT count(0) FROM jianli_appraisal  
+2022-03-15 21:11:07 [http-nio-8050-exec-1] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -==> Parameters:  
+2022-03-15 21:11:07 [http-nio-8050-exec-1] DEBUG c.h.b.d.j.m.A.selectByExample_COUNT -<==      Total: 1 
+2022-03-15 21:11:07 [http-nio-8050-exec-1] DEBUG c.h.b.d.j.m.A.selectByExample -==>  Preparing: select id, content from jianli_appraisal LIMIT ?  
+2022-03-15 21:11:07 [http-nio-8050-exec-1] DEBUG c.h.b.d.j.m.A.selectByExample -==> Parameters: 10(Integer) 
+2022-03-15 21:11:07 [http-nio-8050-exec-1] DEBUG c.h.b.d.j.m.A.selectByExample -<==      Total: 3 
+2022-03-15 21:11:13 [main] INFO  com.hongshen.boke.BokeApplication -Starting BokeApplication on DESKTOP-GQBECKU with PID 21496 (started by Zz in D:\共享文件\code space\基于JAVA的综合博客系统的设计与实现（微信：-DRRRRR\基于JAVA的综合博客系统的设计与实现\personal-blog) 
+2022-03-15 21:11:13 [main] DEBUG com.hongshen.boke.BokeApplication -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE 
+2022-03-15 21:11:13 [main] INFO  com.hongshen.boke.BokeApplication -The following profiles are active: my 
+2022-03-15 21:11:14 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e15b7e8: startup date [Tue Mar 15 21:11:14 CST 2022]; root of context hierarchy 
+2022-03-15 21:11:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-03-15 21:11:14 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$e05a53f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2022-03-15 21:11:14 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca84272] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2022-03-15 21:11:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8050 (http) 
+2022-03-15 21:11:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8050"] 
+2022-03-15 21:11:15 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat] 
+2022-03-15 21:11:15 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.34 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\jdk8\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\software\python2\;D:\software\python2\Scripts;D:\software\python2\Scripts\;D:\software\python2\;D:\software\python3\Scripts\;D:\software\python3\;C:\ProgramData\Oracle\Java\javapath;D:\software\securityCrt\;C:\Windows\System32;D:\software\jdk7\jdk\bin;D:\software\jdk7\jdk\jre\bin;D:\software\xuniji\anzhuang\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;D:\software\nodejs\node_global;C:\Program Files (x86)\PuTTY\;D:\software\TortoiseSVN\bin;D:\software\redis4.0\;D:\software\git\cmd;D:\software\nodejs;D:\software\maven\apache-maven-3.5.3\apache-maven-3.5.3\bin;"%SystemRoot\system32;C:\Windows;";C:\Program Files\Mullvad VPN\resources;D:\software\微信开发者工具\微信web开发者工具\dll;D:\software\nodejs;.] 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1124 ms 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/] 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Servlet statViewServlet mapped to [/druid/*] 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*] 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*] 
+2022-03-15 21:11:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*] 
+2022-03-15 21:11:15 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -Init DruidDataSource 
+2022-03-15 21:11:15 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e15b7e8: startup date [Tue Mar 15 21:11:14 CST 2022]; root of context hierarchy 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/delete.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.ArticleController.delete(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/queryList.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.response.article.ArticleListResponse>> com.hongshen.boke.controller.ArticleController.list(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/query.html]}" onto public java.lang.String com.hongshen.boke.controller.ArticleController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/list.html]}" onto public java.lang.String com.hongshen.boke.controller.ArticleController.article() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.ArticleController.edit(com.hongshen.boke.dao.object.ArticleDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/article/article-edit.html]}" onto public java.lang.String com.hongshen.boke.controller.ArticleController.articleEdit() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/activemq/send]}" onto public java.lang.String com.hongshen.boke.controller.avtivemq.ProviderController.send() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/boke.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.index(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.response.article.ArticleListResponse>> com.hongshen.boke.controller.before.MyBokeController.list(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/search.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.search(org.springframework.ui.Model,java.lang.String) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/tourist/registered.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.registered() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/detail.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.queryArticle(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/tourist/add.html]}" onto public com.hongshen.boke.response.ResultResponse com.hongshen.boke.controller.before.MyBokeController.addTourist(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/toutist/login.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.login() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/parentColumn.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.queryArticleForParentColumn(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/column.html]}" onto public java.lang.String com.hongshen.boke.controller.before.MyBokeController.queryArticleForChildColumn(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/bombing/index]}" onto public void com.hongshen.boke.controller.bombing.BombingController.index() throws java.awt.AWTException 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/delete.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.ColumnController.delete(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/queryList.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.ColumnDO>> com.hongshen.boke.controller.ColumnController.list(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/query.html]}" onto public java.lang.String com.hongshen.boke.controller.ColumnController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/list.html]}" onto public java.lang.String com.hongshen.boke.controller.ColumnController.column() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.ColumnController.edit(com.hongshen.boke.dao.object.ColumnDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/column-edit.html]}" onto public java.lang.String com.hongshen.boke.controller.ColumnController.columnEdit() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/queryChildColumn.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.ColumnDO>> com.hongshen.boke.controller.ColumnController.queryChildColumn(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/column/queryParentColumn.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.ColumnDO>> com.hongshen.boke.controller.ColumnController.queryParentColumn(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/index.html]}" onto public java.lang.String com.hongshen.boke.controller.IndexController.main(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/login.html]}" onto public java.lang.String com.hongshen.boke.controller.IndexController.managerIndex() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/welcome.html]}" onto public java.lang.String com.hongshen.boke.controller.IndexController.welcome() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/out.html]}" onto public java.lang.String com.hongshen.boke.controller.LoginController.out(javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/logins.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.LoginController.logins(com.hongshen.boke.dao.object.UserDO,javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/userDetails.html]}" onto public java.lang.String com.hongshen.boke.controller.LoginController.userDetails(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/shiro/a]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.response.article.ArticleListResponse>> com.hongshen.boke.controller.shiro.ShiroController.logins() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/shiro/login]}" onto public java.lang.String com.hongshen.boke.controller.shiro.ShiroController.login(java.lang.String,java.lang.String) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/delete.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.TouristController.delete(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/queryList.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.TouristDO>> com.hongshen.boke.controller.TouristController.list(java.lang.Integer,java.lang.Integer,java.lang.String) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/query.html]}" onto public java.lang.String com.hongshen.boke.controller.TouristController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.TouristController.edit(com.hongshen.boke.dao.object.TouristDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/tourist/list.html]}" onto public java.lang.String com.hongshen.boke.controller.TouristController.tourist() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/toutist/login.html]}" onto public com.hongshen.boke.response.ResultResponse<com.hongshen.boke.dao.object.TouristDO> com.hongshen.boke.controller.TouristController.login(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/tourist-edit.html]}" onto public java.lang.String com.hongshen.boke.controller.TouristController.touristEdit() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/delete.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.UserController.delete(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/queryList.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.object.UserDO>> com.hongshen.boke.controller.UserController.list(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/query.html]}" onto public java.lang.String com.hongshen.boke.controller.UserController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/list.html]}" onto public java.lang.String com.hongshen.boke.controller.UserController.user() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.controller.UserController.edit(com.hongshen.boke.dao.object.UserDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/manager/user/user-edit.html]}" onto public java.lang.String com.hongshen.boke.controller.UserController.userEdit() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/headImgUpload.html]}" onto public com.hongshen.boke.response.ResultResponse com.hongshen.boke.controller.UserController.headImgUpload(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.AppraisalController.index() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.AppraisalController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/appraisal-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.AppraisalController.info() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.AppraisalController.del(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.AppraisalController.edit(com.hongshen.boke.dao.jianli.object.AppraisalDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/appraisal/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.AppraisalDO>> com.hongshen.boke.jianli.controller.AppraisalController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/sendEmail]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.before.JianliIndexController.index(com.hongshen.boke.request.email.EmailRequest) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/]}" onto public java.lang.String com.hongshen.boke.jianli.controller.before.JianliIndexController.index(org.springframework.ui.Model) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/download]}" onto public void com.hongshen.boke.jianli.controller.before.JianliIndexController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.ProjectController.index() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.ProjectController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/project-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.ProjectController.info() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.ProjectController.del(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.ProjectController.edit(com.hongshen.boke.dao.jianli.object.ProjectDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/project/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.ProjectDO>> com.hongshen.boke.jianli.controller.ProjectController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.SkillController.index() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.SkillController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/skill-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.SkillController.info() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.SkillController.del(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.SkillController.edit(com.hongshen.boke.dao.jianli.object.SkillDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/skill/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.SkillDO>> com.hongshen.boke.jianli.controller.SkillController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.UserInfoController.index() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.UserInfoController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/userinfo-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.UserInfoController.info() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.UserInfoController.del(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.UserInfoController.edit(com.hongshen.boke.dao.jianli.object.UserinfoDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.UserinfoDO>> com.hongshen.boke.jianli.controller.UserInfoController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/jianli-upload.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.UserInfoController.upload() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/userinfo/upload.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.UserInfoController.uploadFile(org.springframework.web.multipart.MultipartFile) throws java.io.IOException 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/index.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.WorkController.index() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/query.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.WorkController.query(org.springframework.ui.Model,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/work-edit.html]}" onto public java.lang.String com.hongshen.boke.jianli.controller.WorkController.info() 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/del.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.WorkController.del(java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/edit.html]}" onto public com.hongshen.boke.response.ResultResponse<java.lang.String> com.hongshen.boke.jianli.controller.WorkController.edit(com.hongshen.boke.dao.jianli.object.WorkDO) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/jianli/work/list.html]}" onto public com.hongshen.boke.response.ResultResponse<java.util.List<com.hongshen.boke.dao.jianli.object.WorkDO>> com.hongshen.boke.jianli.controller.WorkController.queryList(java.lang.Integer,java.lang.Integer) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-03-15 21:11:16 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-03-15 21:11:16 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup 
+2022-03-15 21:11:16 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure 
+2022-03-15 21:11:16 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure 
+2022-03-15 21:11:16 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper] 
+2022-03-15 21:11:16 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter] 
+2022-03-15 21:11:16 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -Starting beans in phase 2147483547 
+2022-03-15 21:11:16 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -Starting beans in phase 2147483647 
+2022-03-15 21:11:16 [main] INFO  o.a.activemq.broker.BrokerService -Using Persistence Adapter: MemoryPersistenceAdapter 
+2022-03-15 21:11:16 [JMX connector] INFO  o.a.a.broker.jmx.ManagementContext -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi 
+2022-03-15 21:11:16 [main] INFO  o.a.activemq.broker.BrokerService -Apache ActiveMQ 5.15.6 (localhost, ID:DESKTOP-GQBECKU-58712-1647349876803-0:1) is starting 
+2022-03-15 21:11:16 [main] INFO  o.a.activemq.broker.BrokerService -Apache ActiveMQ 5.15.6 (localhost, ID:DESKTOP-GQBECKU-58712-1647349876803-0:1) started 
+2022-03-15 21:11:16 [main] INFO  o.a.activemq.broker.BrokerService -For help or more information please see: http://activemq.apache.org 
+2022-03-15 21:11:16 [main] INFO  o.a.a.broker.TransportConnector -Connector vm://localhost started 
+2022-03-15 21:11:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8050"] 
+2022-03-15 21:11:17 [main] INFO  o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read 
+2022-03-15 21:11:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8050 (http) with context path '' 
+2022-03-15 21:11:17 [main] INFO  com.hongshen.boke.BokeApplication -Started BokeApplication in 3.313 seconds (JVM running for 4.151) 
+2022-03-15 22:10:53 [http-nio-8050-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2022-03-15 22:10:53 [http-nio-8050-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started 
+2022-03-15 22:10:53 [http-nio-8050-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms 
+2022-03-15 22:10:54 [http-nio-8050-exec-1] INFO  c.h.b.c.before.MyBokeController -域名路径为=======127.0.0.1================================ 
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -==>  Preparing: select id, username, password, name, head_portrait, wechat, qq_number, weibo, signature from boke_user  
+2022-03-15 22:10:54 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==>  Preparing: select id, ip, interface_name, count, update_time from jianli_statistics WHERE ( ip = ? and interface_name = ? )  
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -==> Parameters:  
+2022-03-15 22:10:54 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -==> Parameters: 127.0.0.1(String), /boke.html(String) 
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.UserMapper.selectByExample -<==      Total: 1 
+2022-03-15 22:10:54 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.selectByExample -<==      Total: 1 
+2022-03-15 22:10:54 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==>  Preparing: update jianli_statistics SET ip = ?, interface_name = ?, count = ?, update_time = ? where id = ?  
+2022-03-15 22:10:54 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -==> Parameters: 127.0.0.1(String), /boke.html(String), 16(Integer), 2022-03-15 22:10:54.18(Timestamp), 286(Integer) 
+2022-03-15 22:10:54 [DefaultMessageListenerContainer-1] DEBUG c.h.b.d.j.m.S.updateByPrimaryKeySelective -<==    Updates: 1 
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -==>  Preparing: SELECT count(0) FROM boke_article ba LEFT JOIN boke_user bu ON ba.user_id = bu.id LEFT JOIN boke_column bc ON ba.column_id = bc.id WHERE 1 = 1  
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -==> Parameters:  
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.M.list_COUNT -<==      Total: 1 
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==>  Preparing: select ba.id, ba.title,ba.creat_time as creatTime,bc.name as columnName ,bu.name as uName,ba.description as description,bc.parent_name as parentName from boke_article ba left join boke_user bu on ba.user_id=bu.id left join boke_column bc on ba.column_id=bc.id where 1=1 order by ba.creat_time LIMIT ?  
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==> Parameters: 10(Integer) 
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.m.MyArticleMapper.list -<==      Total: 10 
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is null )  
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 1 
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is not null )  
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 22:10:54 [http-nio-8050-exec-1] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 3 
+2022-03-15 22:11:25 [http-nio-8050-exec-4] DEBUG c.h.b.d.m.UserMapper.selectByExample -==>  Preparing: select id, username, password, name, head_portrait, wechat, qq_number, weibo, signature from boke_user WHERE ( username = ? and password = ? )  
+2022-03-15 22:11:25 [http-nio-8050-exec-4] DEBUG c.h.b.d.m.UserMapper.selectByExample -==> Parameters: admin(String), 123456(String) 
+2022-03-15 22:11:25 [http-nio-8050-exec-4] DEBUG c.h.b.d.m.UserMapper.selectByExample -<==      Total: 1 
+2022-03-15 22:11:40 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.M.list_COUNT -==>  Preparing: SELECT count(0) FROM boke_article ba LEFT JOIN boke_user bu ON ba.user_id = bu.id LEFT JOIN boke_column bc ON ba.column_id = bc.id WHERE 1 = 1  
+2022-03-15 22:11:40 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.M.list_COUNT -==> Parameters:  
+2022-03-15 22:11:40 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.M.list_COUNT -<==      Total: 1 
+2022-03-15 22:11:40 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==>  Preparing: select ba.id, ba.title,ba.creat_time as creatTime,bc.name as columnName ,bu.name as uName,ba.description as description,bc.parent_name as parentName from boke_article ba left join boke_user bu on ba.user_id=bu.id left join boke_column bc on ba.column_id=bc.id where 1=1 order by ba.creat_time LIMIT ?  
+2022-03-15 22:11:40 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.MyArticleMapper.list -==> Parameters: 10(Integer) 
+2022-03-15 22:11:40 [http-nio-8050-exec-8] DEBUG c.h.b.d.m.m.MyArticleMapper.list -<==      Total: 10 
+2022-03-15 22:11:41 [http-nio-8050-exec-2] DEBUG c.h.b.d.m.C.selectByExample -==>  Preparing: select id, name, link, description, parent_id, parent_name from boke_column WHERE ( parent_id is null )  
+2022-03-15 22:11:41 [http-nio-8050-exec-2] DEBUG c.h.b.d.m.C.selectByExample -==> Parameters:  
+2022-03-15 22:11:41 [http-nio-8050-exec-2] DEBUG c.h.b.d.m.C.selectByExample -<==      Total: 1 
